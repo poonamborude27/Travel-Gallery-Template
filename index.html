@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Gallery</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #cde9f7, #ffffff);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1.title {
+      color: #2c3e50;
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    .button-bar {
+      margin-bottom: 40px;
+    }
+
+    .button-bar button {
+      border-radius: 50px;
+      padding: 10px 20px;
+      border: 2px solid rgb(29, 27, 27);
+      color: rgb(91, 13, 13);
+      background-color: rgb(241, 242, 239);
+      margin: 0 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button-bar button:hover {
+      background-color: #f0f0f0;
+      color: black;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: rgba(235, 235, 235, 0.757);
+      width: 400px;
+      height: 500px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card h1 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .card h3 {
+      margin: 0 0 25px;
+      color: gray;
+      font-weight: normal;
+      font-size: 15px;
+      padding: 0 10px;
+    }
+
+    .read-more-btn {
+      color: blue;
+      padding: 12px 25px;
+      background-color: rgb(186, 209, 240);
+      border: none;
+      cursor: pointer;
+      border-radius: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .read-more-btn:hover {
+      background-color: #b5b5b5;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">Travel Gallery</h1>
+
+  <div class="button-bar">
+    <button>Mountains</button>
+    <button>Lakes</button>
+    <button>Beaches</button>
+  </div>
+
+  <div class="card-container">
+    <!-- Card 1 – Mountains -->
+    <div class="card">
+      <img src="walking-hiking-photos-inspiration-10.webp" alt="Mountains" />
+      <h1>Mountain Escapes</h1>
+      <h3>
+        Lose yourself in the rugged beauty of towering peaks, fresh alpine air,
+        and peaceful trails. Whether it’s a sunrise trek or a snow-covered summit,
+        the mountains are always calling.
+      </h3>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <!-- Card 2 – Lakes -->
+    <div class="card">
+      <img src="lakes.jpeg" alt="Lakes" />
+      <h1>Lakeside Moments</h1>
+      <h3>
+        Still waters, mirror-like reflections, and golden sunsets. Lakes offer
+        the perfect retreat for relaxation, kayaking adventures, and quiet
+        contemplation amidst nature.
+      </h3>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <!-- Card 3 – Beaches -->
+    <div class="card">
+      <img src="beach.jpeg" alt="Beaches" />
+      <h1>Sun, Sand & Sea Breezes</h1>
+      <h3>
+        From soft white sands to crystal-clear waves, the beach is where serenity
+        meets adventure. Dive in, relax under a palm, or catch the perfect
+        sunset by the shore.
+      </h3>
+      <button class="read-more-btn">Read More</button>
+    </div>
+  </div>
+</body>
+
+</html>
